@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Lógica y Cálculo Matemático</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        #timer {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+        .correct {
+            color: green;
+            font-weight: bold;
+        }
+        .incorrect {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Test de Lógica y Cálculo Matemático</h1>
+        <div id="timer">Tiempo restante: 15:00</div>
+        <form id="quizForm">
+            <!-- Pregunta 1 -->
+            <div class="question">
+                <p>1. Si 4 personas pueden hacer un trabajo en 8 días, ¿cuántos días necesitarán 8 personas para hacer el mismo trabajo?</p>
+                <input type="radio" name="q1" value="a"> a) 2 días<br>
+                <input type="radio" name="q1" value="b"> b) 4 días<br>
+                <input type="radio" name="q1" value="c"> c) 8 días<br>
+                <input type="radio" name="q1" value="d"> d) 16 días<br>
+            </div>
+            <!-- Pregunta 2 -->
+            <div class="question">
+                <p>2. Si un coche viaja a 80 km/h, ¿cuánto tiempo tardará en recorrer 240 km?</p>
+                <input type="radio" name="q2" value="a"> a) 2 horas<br>
+                <input type="radio" name="q2" value="b"> b) 3 horas<br>
+                <input type="radio" name="q2" value="c"> c) 4 horas<br>
+                <input type="radio" name="q2" value="d"> d) 5 horas<br>
+            </div>
+            <!-- Pregunta 3 -->
+            <div class="question">
+                <p>3. Si el 25% de un número es 75, ¿cuál es el número?</p>
+                <input type="radio" name="q3" value="a"> a) 150<br>
+                <input type="radio" name="q3" value="b"> b) 200<br>
+                <input type="radio" name="q3" value="c"> c) 300<br>
+                <input type="radio" name="q3" value="d"> d) 400<br>
+            </div>
+            <!-- Pregunta 4 -->
+            <div class="question">
+                <p>4. Si 6 manzanas cuestan 18 euros, ¿cuánto costarán 10 manzanas?</p>
+                <input type="radio" name="q4" value="a"> a) 24 euros<br>
+                <input type="radio" name="q4" value="b"> b) 28 euros<br>
+                <input type="radio" name="q4" value="c"> c) 30 euros<br>
+                <input type="radio" name="q4" value="d"> d) 36 euros<br>
+            </div>
+            <!-- Pregunta 5 -->
+            <div class="question">
+                <p>5. Si una camisa con un 30% de descuento cuesta 70 euros, ¿cuál era el precio original?</p>
+                <input type="radio" name="q5" value="a"> a) 90 euros<br>
+                <input type="radio" name="q5" value="b"> b) 95 euros<br>
+                <input type="radio" name="q5" value="c"> c) 100 euros<br>
+                <input type="radio" name="q5" value="d"> d) 105 euros<br>
+            </div>
+            <!-- Pregunta 6 -->
+            <div class="question">
+                <p>6. Si un artículo se vende con un 25% de ganancia y su precio de venta es 250 euros, ¿cuál es el costo original?</p>
+                <input type="radio" name="q6" value="a"> a) 200 euros<br>
+                <input type="radio" name="q6" value="b"> b) 210 euros<br>
+                <input type="radio" name="q6" value="c"> c) 220 euros<br>
+                <input type="radio" name="q6" value="d"> d) 230 euros<br>
+            </div>
+            <!-- Pregunta 7 -->
+            <div class="question">
+                <p>7. ¿Cuál es el 20% de 450?</p>
+                <input type="radio" name="q7" value="a"> a) 75<br>
+                <input type="radio" name="q7" value="b"> b) 80<br>
+                <input type="radio" name="q7" value="c"> c) 85<br>
+                <input type="radio" name="q7" value="d"> d) 90<br>
+            </div>
+            <!-- Pregunta 8 -->
+            <div class="question">
+                <p>8. Si A es inversamente proporcional a B, y A = 5 cuando B = 4, ¿cuál es el valor de A cuando B = 10?</p>
+                <input type="radio" name="q8" value="a"> a) 1<br>
+                <input type="radio" name="q8" value="b"> b) 2<br>
+                <input type="radio" name="q8" value="c"> c) 3<br>
+                <input type="radio" name="q8" value="d"> d) 4<br>
+            </div>
+            <!-- Pregunta 9 -->
+            <div class="question">
+                <p>9. ¿Cuál es el 60% de 150?</p>
+                <input type="radio" name="q9" value="a"> a) 75<br>
+                <input type="radio" name="q9" value="b"> b) 80<br>
+                <input type="radio" name="q9" value="c"> c) 85<br>
+                <input type="radio" name="q9" value="d"> d) 90<br>
+            </div>
+            <!-- Pregunta 10 -->
+            <div class="question">
+                <p>10. ¿Qué porcentaje de 500 es 125?</p>
+                <input type="radio" name="q10" value="a"> a) 20%<br>
+                <input type="radio" name="q10" value="b"> b) 25%<br>
+                <input type="radio" name="q10" value="c"> c) 30%<br>
+                <input type="radio" name="q10" value="d"> d) 35%<br>
+            </div>
+            <!-- Pregunta 11 -->
+            <div class="question">
+                <p>11. Si un tanque de agua se llena en 4 horas con un caudal de 30 litros por minuto, ¿cuántos litros tiene el tanque?</p>
+                <input type="radio" name="q11" value="a"> a) 4800 litros<br>
+                <input type="radio" name="q11" value="b"> b) 7200 litros<br>
+                <input type="radio" name="q11" value="c"> c) 9600 litros<br>
+                <input type="radio" name="q11" value="d"> d) 12000 litros<br>
+            </div>
+            <!-- Pregunta 12 -->
+            <div class="question">
+                <p>12. Si el 35% de una cantidad es 140, ¿cuál es la cantidad?</p>
+                <input type="radio" name="q12" value="a"> a) 200<br>
+                <input type="radio" name="q12" value="b"> b) 300<br>
+                <input type="radio" name="q12" value="c"> c) 400<br>
+                <input type="radio" name="q12" value="d"> d) 500<br>
+            </div>
+            <!-- Pregunta 13 -->
+            <div class="question">
+                <p>13. Si 8 máquinas producen 64 unidades en una hora, ¿cuántas unidades producirán 5 máquinas en el mismo tiempo?</p>
+                <input type="radio" name="q13" value="a"> a) 30<br>
+                <input type="radio" name="q13" value="b"> b) 35<br>
+                <input type="radio" name="q13" value="c"> c) 40<br>
+                <input type="radio" name="q13" value="d"> d) 45<br>
+            </div>
+            <!-- Pregunta 14 -->
+            <div class="question">
+                <p>14. Si un producto cuesta 200 euros y se aplica un descuento del 15%, ¿cuál es el precio final?</p>
+                <input type="radio" name="q14" value="a"> a) 160 euros<br>
+                <input type="radio" name="q14" value="b"> b) 170 euros<br>
+                <input type="radio" name="q14" value="c"> c) 175 euros<br>
+                <input type="radio" name="q14" value="d"> d) 180 euros<br>
+            </div>
+            <!-- Pregunta 15 -->
+            <div class="question">
+                <p>15. Si un préstamo de 6000 euros tiene un interés del 4% anual, ¿cuánto interés se generará en un año?</p>
+                <input type="radio" name="q15" value="a"> a) 220 euros<br>
+                <input type="radio" name="q15" value="b"> b) 240 euros<br>
+                <input type="radio" name="q15" value="c"> c) 250 euros<br>
+                <input type="radio" name="q15" value="d"> d) 260 euros<br>
+            </div>
+            <button type="button" onclick="submitQuiz()">Finalizar</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Resultado</h2>
+            <div id="answers"></div>
+        </div>
+    </div>
+
+    <script>
+        let timeLeft = 900;
+        const timerElement = document.getElementById('timer');
+        const quizForm = document.getElementById('quizForm');
+        const resultElement = document.getElementById('result');
+        const answersElement = document.getElementById('answers');
+
+        const correctAnswers = {
+            q1: 'b',
+            q2: 'b',
+            q3: 'c',
+            q4: 'c',
+            q5: 'c',
+            q6: 'a',
+            q7: 'd',
+            q8: 'b',
+            q9: 'd',
+            q10: 'b',
+            q11: 'b',
+            q12: 'c',
+            q13: 'c',
+            q14: 'b',
+            q15: 'b',
+        };
+
+        function startTimer() {
+            const interval = setInterval(() => {
+                if (timeLeft <= 0) {
+                    clearInterval(interval);
+                    submitQuiz();
+                } else {
+                    timeLeft--;
+                    const minutes = Math.floor(timeLeft / 60);
+                    const seconds = timeLeft % 60;
+                    timerElement.textContent = `Tiempo restante: ${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                }
+            }, 1000);
+        }
+
+        function submitQuiz() {
+            const formData = new FormData(quizForm);
+            let score = 0;
+            let answersHtml = '';
+
+            for (const [question, answer] of formData.entries()) {
+                if (correctAnswers[question] === answer) {
+                    answersHtml += `<p>${question}: ${answer} <span class="correct">&#10004;</span></p>`;
+                    score++;
+                } else {
+                    answersHtml += `<p>${question}: ${answer} <span class="incorrect">&#10008;</span></p>`;
+                }
+            }
+
+            answersHtml += `<p>Tu puntuación es ${score} de 15.</p>`;
+            answersElement.innerHTML = answersHtml;
+            quizForm.classList.add('hidden');
+            resultElement.classList.remove('hidden');
+        }
+
+        window.onload = () => {
+            startTimer();
+        }
+    </script>
+</body>
+</html>
